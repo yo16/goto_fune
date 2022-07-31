@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang=""ja">
+<head>
+    <meta charset="utf-8">
+    <title>五島の船の時刻表</title>
+    <meta name="description" content="五島の島々をめぐる船の時刻表。Ships timetable in GOTO islands.">
+    <script src="./js/lib/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="./js/timetables.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <table id="tbl_input">
+        <tr>
+            <td>出発</td>
+            <td></td>
+            <td>到着</td>
+            <td class="td_spacer" style="width:30px"></td>
+            <td>出発日</td>
+        </tr>
+        <tr>
+            <td><select id="sel_departure"></select></td>
+            <td>→</td>
+            <td><select id="sel_arrival"></select></td>
+            <td></td>
+            <td><input type="date" id="in_dep_date" /></td>
+        </tr>
+    </table>
+    <!-- button onclick="btn_search()">検索</button -->
+    <hr />
+    <div id="search_result"></div>
+    <hr />
+    リンク
+    <ul>
+        <li><a href="http://www.goto-koutsu.jp/pctime/timetable.php" target="_blank">五島交通ナビ</a></li>
+        <li><a href="https://www.google.com/maps/d/edit?mid=1l0gnFvccRWHFEErs-4EIaQTQ9MfDi_4&usp=sharing" target="_blank">五島と周辺の港の地図</a></li>
+    </ul>
+    <div id="div_menseki">
+    免責事項<br />
+    このサイトは、最新の情報を漏れなく正確に反映しているとは限りません。<br />
+    最新情報や正確な情報は、公式のサイトや運営会社へお問合せをしてご確認ください。</div>
+
+</body>
+</html>
